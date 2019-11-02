@@ -18,13 +18,13 @@ class MyHomePage extends StatelessWidget {
     Transaction(
       id: 't1',
       title: 'New Shoes',
-      amount: 600000,
+      amount: 99.99,
       date: DateTime.now(),
     ),
     Transaction(
       id: 't2',
       title: 'Weekly Grociery',
-      amount: 150000,
+      amount: 16.05,
       date: DateTime.now(),
     ),
   ];
@@ -53,6 +53,9 @@ class MyHomePage extends StatelessWidget {
                   child: Row(
                 children: <Widget>[
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                    decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
+                    padding: EdgeInsets.all(10),
                     child: Text(tx.amount.toString()),
                   ),
                   Column(
