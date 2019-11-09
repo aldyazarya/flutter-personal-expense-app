@@ -40,7 +40,10 @@ class _UserTransactionsState extends State<UserTransactions> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: <Widget>[NewTransactions(), TransactionList(_userTransactions)],
+      children: <Widget>[
+        NewTransactions(_addNewTransaction),
+        TransactionList(_userTransactions),
+      ],
     );
   }
 }
